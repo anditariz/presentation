@@ -1,13 +1,9 @@
 body {
   background-color: black;
   color: white;
-  font-family: sans-serif;
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 .header {
@@ -18,6 +14,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.contents{
+  opacity: 0;
 }
 
 .logo {
@@ -34,10 +34,29 @@ body {
 
 .main-content {
   text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-tittle {
-  font-size: 4rem;
+  font-size: 7rem;
   font-weight: bold;
   margin-bottom: 30px;
   line-height: 1.2;
@@ -59,9 +78,14 @@ body {
 }
 
 .footer {
+  overflow-x: hidden;
   position: fixed;
   bottom: 20px;
+  padding: 20px;
   display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
 }
 
@@ -69,9 +93,73 @@ body {
   color: white;
   font-size: 15px;
   cursor: pointer;
-  border-radius: 100%;
+  border-radius: 50%;
   border: 2px solid #ffffff;
-  padding: 4px;
+  padding: 10px;
+}
+
+.curtain {
+  position: fixed;
+  width: 50%;
+  height: 100%;
+  background: #222; /* Dark Gray */
+  z-index: 9999;
+}
+.curtain-left {
+  /* position: relative; */
+  left: 0;
+  top: 0;
+  transform: translateX(-100%);
+}
+.curtain-right {
+  right: 0;
+  top: 0;
+  transform: translateX(100%);
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  /* padding-right: 20px; */
+}
+
+.letter-a {
+  color: #ff914d;
+}
+
+.letter-s {
+  color: #ffffff;
+  
+}
+
+.loading-container {
+  /* position: absolute; */
+  opacity: 0;
+  transform: translateX(-208px);
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: white;
+  border: 8px solid #ffffff;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.loading-water {
+  width: 100%;
+  height: 0%;
+  background: #000;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+.loading-text {
+  position: absolute;
+  font-size: 8rem;
+  font-weight: bold;
+  color: black;
+  z-index: 2;
 }
 
 .logo {
@@ -89,13 +177,21 @@ body {
     justify-content: center;
     text-align: left;
 }
-.about-text {
+
+.content-text h1 {
     text-align: left;
-    font-size: 4rem;
+    font-size: 7rem;
     font-weight: bold;
 }
-.image {
-    width: 100%;
+
+.content-text p {
+  text-align: left;
+  font-size: 1.5rem;
+  /* font-weight: bold; */
+}
+
+.image-content {
+    width: 1000px;
     margin-left: 10rem;
     margin-top: 4rem;
 }
