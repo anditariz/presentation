@@ -43,7 +43,7 @@ gsap.utils.toArray(".section").forEach((section , index) => {
           pin: true,
         //   markers: true,
           start: 'top top',
-          end: '+=3000px'
+          end: '+=1000px'
         }
       })
         .fromTo(
@@ -57,17 +57,9 @@ gsap.utils.toArray(".section").forEach((section , index) => {
             {
               scale: 1,
               opacity: 1,
-              duration: 5,
+              duration: 2,
               ease: "power2.out"
             },
-            "+=2"
-          ).to(
-            `#section-${index}`,
-            {
-              duration: 5,
-              ease: "power2.out"
-            },
-            "+=2"
           ).to(
             `#section-${index}`,
             {
