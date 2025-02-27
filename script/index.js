@@ -57,7 +57,7 @@ gsap.utils.toArray(".section").forEach((section , index) => {
             {
               scale: 1,
               opacity: 1,
-              duration: 2,
+              duration: .5,
               ease: "power2.out"
             },
           ).to(
