@@ -93,7 +93,7 @@ body {
   color: white;
   font-size: 15px;
   cursor: pointer;
-  border-radius: 50%;
+  border-radius: 100%;
   border: 2px solid #ffffff;
   padding: 10px;
 }
@@ -215,7 +215,7 @@ body {
 /* style page-4 */
 .container {
   justify-content: right;
-  text-align: center;
+  text-align: left;
 }
 .product-text {
   font-size: 4rem;
@@ -242,3 +242,10 @@ body {
   margin-left: 10rem;
   margin-top: 4rem;
 }
+
+.section-4 {
+  display: flex;
+  justify-content: center;
+  text-emphasis: none;
+}
+
