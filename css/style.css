@@ -260,34 +260,13 @@ body {
 }
 
 #section-5 p {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
 }
 
-
-.container {
-  display: flex;
-  align-items: flex-start; /* Menyamakan posisi atas */
-  gap: 20px; /* Jarak antara gambar dan teks */
+.container .maps {
+  flex: 1 1 45rem;
+  width: 100%;
+  object-fit: cover;
+  display: relative;
 }
 
-.image-container {
-  /* flex-shrink: 0; Gambar tidak menyusut */
-}
-
-.image-container img {
-  width: 300px; /* Sesuaikan ukuran gambar */
-  border-radius: 70%; /* Biar bulat seperti contoh */
-  display: block;
-}
-
-.text-container {
-  flex: 1; /* Supaya teks menyesuaikan lebar */
-}
-
-.description {
-  margin-top: 0;
-}
-
-.content {
-  margin-top: 10px; /* Beri jarak antara teks */
-}
